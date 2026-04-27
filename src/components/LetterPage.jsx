@@ -1,0 +1,26 @@
+import React from 'react';
+import './LetterPage.css';
+
+const LetterPage = ({ children, settings }) => {
+  const style = settings ? {
+    paddingTop: `${settings.marginTop}mm`,
+    paddingBottom: `${settings.marginBottom}mm`,
+    paddingLeft: `${settings.marginLeft}mm`,
+    paddingRight: `${settings.marginRight}mm`
+  } : {};
+
+  return (
+    <div className="letter-page">
+      <div className="letter-background">
+        <img src="/assets/letter_pad.jpg" alt="Letterhead Background" />
+      </div>
+      <div className="letter-content-overlay" style={style}>
+        {children}
+      </div>
+
+
+    </div>
+  );
+};
+
+export default LetterPage;

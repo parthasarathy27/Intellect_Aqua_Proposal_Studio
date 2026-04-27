@@ -1,0 +1,338 @@
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: min-content;
+}
+
+
+
+.page-wrapper {
+  transform-origin: top center;
+  /* Scale is controlled dynamically via App.jsx for better responsiveness */
+}
+
+
+
+.page1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  text-align: left;
+  padding-left: 5mm;
+}
+
+
+
+.client-label {
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 5mm;
+  color: #334155;
+}
+
+.client-name {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 4mm;
+  display: block;
+}
+
+.client-address {
+  font-size: 12pt;
+  color: #475569;
+  display: block;
+  max-width: 120mm;
+  line-height: 1.4;
+}
+
+.project-details {
+  margin-top: 30mm;
+  text-align: left;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10mm;
+  width: 100%;
+}
+
+
+.detail-row {
+  display: flex;
+  margin-bottom: 5mm;
+  font-size: 11pt;
+}
+
+.detail-row .label { width: 45mm; font-weight: bold; }
+.detail-row .separator { width: 10mm; }
+
+.page2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+  height: 100%;
+}
+
+.recipient-info {
+  margin-top: 2mm;
+  line-height: 1.4;
+}
+
+.recipient-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.ref-date-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.subject {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.body-text {
+  flex-grow: 1;
+}
+
+.body-text p {
+  margin-bottom: 4mm;
+  text-align: justify;
+}
+
+.closing { 
+  padding-bottom: 5mm;
+  page-break-inside: avoid;
+}
+
+
+.signatory-name { 
+  margin-top: 10mm; 
+  font-weight: bold; 
+  text-decoration: underline; 
+  text-transform: uppercase;
+}
+.company-signature { margin-top: 5mm; font-weight: bold; }
+
+/* Technical Pages (4, 5, 6) */
+.technical-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.technical-content h2 {
+  font-size: 13pt;
+  color: var(--primary);
+  margin-bottom: 2mm;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.technical-content h3 {
+  font-size: 10pt;
+  margin-top: 2mm;
+  margin-bottom: 1mm;
+}
+
+.technical-content p {
+  font-size: 9pt;
+  line-height: 1.3;
+  margin-bottom: 2mm;
+  text-align: justify;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+
+.param-table th, .param-table td {
+  border: 1px solid #cbd5e1;
+  padding: 1.5mm 2.5mm;
+  text-align: left;
+}
+
+.technical-content h3 {
+  font-size: 11pt;
+  margin-top: 3mm;
+  margin-bottom: 2mm;
+  color: #1e293b;
+}
+
+.border-table td, .border-table th {
+  padding: 1.5mm 3mm;
+  border: 1px solid #cbd5e1;
+}
+
+
+.mini-text td { font-size: 8pt; }
+
+.equipment-table {
+  margin-top: 2mm;
+}
+
+.equipment-table td {
+  padding: 2mm 3mm !important;
+  line-height: 1.4;
+}
+
+.specs-list-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5mm;
+}
+
+.spec-mini-row {
+  display: flex;
+  font-size: 8.5pt;
+  color: #475569;
+}
+
+.spec-label-mini {
+  width: 38mm;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.spec-value-mini {
+  flex-grow: 1;
+}
+
+/* Commercial Details */
+.notes-list { margin-top: 3mm; }
+.note-item { margin-bottom: 1.5mm; font-size: 9pt; text-align: justify; }
+
+.terms-payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8mm;
+  margin-top: 3mm;
+  border-top: 1px dashed #ddd;
+  padding-top: 3mm;
+}
+
+.terms-section h3, .payment-section h3, .warranty-section h3 {
+  font-size: 10pt;
+  text-decoration: underline;
+  margin-bottom: 2mm;
+}
+
+.payment-section ol, .exclusions-list { padding-left: 4mm; font-size: 9pt; }
+.payment-section li, .exclusions-list li {
+  font-size: 8.5pt;
+  margin-bottom: 1mm;
+}
+
+.final-notes-box {
+  margin-top: 5mm;
+  padding: 3mm;
+  background: #f8fafc;
+  border-left: 5px solid var(--primary);
+}
+
+
+.note-item-simple {
+  font-size: 8.5pt;
+  margin-bottom: 1.5mm;
+  text-align: justify;
+}
+
+.terms-section-simple, .payment-section-simple, .warranty-section-simple {
+  margin-top: 2mm;
+}
+
+.terms-section-simple h4, .payment-section-simple h4, .warranty-section-simple h4 {
+  font-size: 10pt;
+  text-decoration: underline;
+  margin-bottom: 1.5mm;
+  color: #1e293b;
+}
+
+.term-row {
+  display: flex;
+  font-size: 8.5pt;
+  margin-bottom: 0.5mm;
+}
+
+.term-label {
+  width: 35mm;
+  font-weight: bold;
+}
+
+.payment-ul {
+  padding-left: 4mm;
+  font-size: 8.5pt;
+}
+
+.payment-ul li {
+  margin-bottom: 1.5mm;
+  text-align: justify;
+}
+
+.sub-title-main {
+  font-size: 10pt;
+  margin-bottom: 2mm;
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 3mm;
+}
+
+.technical-content.compact, .equipment-content.compact, .commercial-content.compact {
+  gap: 3mm;
+}
+
+.technical-content.compact .param-section, .equipment-content.compact .param-section {
+  margin-bottom: 0mm;
+}
+
+.technical-content.compact .section-title {
+  margin-bottom: 3mm;
+}
+
+.mini-text td, .mini-text th {
+  padding: 1mm 2mm !important;
+  font-size: 7.5pt !important;
+  line-height: 1.2;
+}
+
+.price-table td, .price-table th {
+  padding: 1.5mm 3mm;
+}
+
+.note-item-simple {
+  font-size: 8pt;
+  margin-bottom: 1mm;
+}
+
+.terms-section-simple h4, .payment-section-simple h4, .warranty-section-simple h4 {
+  font-size: 9pt;
+  margin-bottom: 1mm;
+}
+
+.term-row { font-size: 8pt; }
+.payment-ul { font-size: 8pt; }
+.payment-ul li { margin-bottom: 0.5mm; }
+.warranty-section-simple p { font-size: 8pt; margin: 0; }
+
+.exclusions-list li {
+  font-size: 8.5pt;
+  margin-bottom: 1mm;
+}
+
+
+.total-row td {
+  background-color: #f8fafc;
+}
+
+.small-title {
+  font-size: 11pt !important;
+  text-align: left !important;
+  margin-bottom: 5mm !important;
+}

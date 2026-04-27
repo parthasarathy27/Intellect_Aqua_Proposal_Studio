@@ -1,0 +1,144 @@
+.editor-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.editor-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.editor-group h3 {
+  font-size: 0.9rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.editor-group h4 {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.editor-group label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: -0.25rem;
+}
+
+.editor-group input, 
+.editor-group textarea {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.editor-group input:focus, 
+.editor-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+  background-color: rgba(14, 165, 233, 0.05);
+}
+
+.body-textarea {
+  min-height: 150px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.row-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.complex-section {
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.complex-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  font-size: 0.85rem;
+}
+
+.help-text {
+  font-size: 0.75rem;
+  color: #f59e0b;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.calc-input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tank-calc-row {
+  margin-bottom: 1rem;
+}
+
+.tank-calc-row label {
+  margin-bottom: 0.5rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.info-box {
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.info-box p {
+  font-size: 0.8rem;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .calc-input-group, .row-inputs {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem;
+  }
+  .editor-group {
+    padding: 1rem;
+  }
+  .editor-content {
+    gap: 1rem;
+  }
+  .info-box {
+    padding: 0.75rem;
+  }
+}
+
