@@ -1,0 +1,567 @@
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: min-content;
+  font-family: 'Cambria', 'Palatino Linotype', 'Palatino', 'serif';
+  --primary: black;
+}
+
+.page-wrapper {
+  transform-origin: top center;
+}
+
+.page1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 30mm;
+}
+
+.client-label {
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15mm;
+  color: black;
+  font-size: 18pt;
+}
+
+.client-name {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 2mm;
+  display: block;
+}
+
+.client-address {
+  font-size: 14pt;
+  color: black;
+  display: block;
+  max-width: 150mm;
+  line-height: 1.5;
+}
+
+.project-details {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+  border-top: none;
+  padding-top: 0;
+}
+
+.project-detail-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 4mm;
+  font-size: 11pt;
+}
+
+.project-detail-row .label {
+  min-width: 38mm;
+  font-weight: bold;
+  text-align: left;
+}
+
+.project-detail-row .separator {
+  width: 6mm;
+  text-align: center;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 5mm;
+  font-size: 11pt;
+}
+
+.detail-row .label {
+  font-weight: bold;
+}
+
+.detail-row .separator {
+  margin: 0 5mm;
+}
+
+.project-details .detail-row {
+  justify-content: flex-start;
+}
+
+.project-details .detail-row .label {
+  width: 38mm;
+}
+
+.page2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5mm;
+  height: auto;
+  font-size: 10pt;
+}
+
+.recipient-info {
+  margin-top: 2mm;
+  line-height: 1.4;
+}
+
+.recipient-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.kind-attn {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1mm;
+  margin-bottom: 1mm;
+}
+
+.ref-date-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.subject {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.body-text {
+  margin-bottom: 2mm;
+}
+
+.body-text p {
+  margin-bottom: 1.5mm;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.closing {
+  padding-bottom: 2mm;
+  page-break-inside: avoid;
+}
+
+.signatory-name {
+  margin-top: 4mm;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.company-signature {
+  margin-top: 1.5mm;
+  font-weight: bold;
+}
+
+/* Page 3: About & Features */
+.page3-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.page3-content .section-title {
+  font-size: 11pt;
+  margin-bottom: 1mm;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-text {
+  font-size: 9pt;
+  line-height: 1.3;
+  text-align: justify;
+  color: black;
+  margin-bottom: 0.5mm;
+}
+
+.sub-title-main {
+  font-size: 10pt;
+  margin-bottom: 1mm;
+  color: var(--primary);
+  border-left: none;
+  padding-left: 0;
+}
+
+.features-section h3 {
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom: 1.5mm;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-left: none;
+  padding-left: 0;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 55mm 1fr;
+  gap: 2mm 3mm;
+  margin-top: 0.5mm;
+}
+
+.features-list li {
+  display: contents;
+  font-size: 9pt;
+}
+
+.features-list li strong {
+  grid-column: 1;
+  color: var(--primary);
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.features-list li span {
+  grid-column: 2;
+  color: black;
+  font-size: 9pt;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+/* Technical Pages (4, 5, 6) */
+.technical-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.technical-content h2 {
+  font-size: 13pt;
+  color: var(--primary);
+  margin-bottom: 2mm;
+  border-bottom: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.technical-content h3 {
+  font-size: 10pt;
+  margin-top: 2mm;
+  margin-bottom: 1mm;
+}
+
+.technical-content p {
+  font-size: 9pt;
+  line-height: 1.3;
+  margin-bottom: 2mm;
+  text-align: justify;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+}
+
+.param-table th,
+.param-table td {
+  border: 1px solid #cbd5e1;
+  padding: 1mm 2mm;
+  text-align: left;
+}
+
+.border-table td,
+.border-table th {
+  padding: 1mm 2mm;
+  border: 1px solid #cbd5e1;
+}
+
+.mini-text td {
+  font-size: 8pt;
+}
+
+.equipment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  padding-top: 0mm;
+  padding-bottom: 5mm;
+}
+
+.equipment-table {
+  margin-top: 2mm;
+}
+
+.equipment-table td {
+  padding: 2mm 3mm !important;
+  line-height: 1.4;
+}
+
+.specs-list-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5mm;
+}
+
+.spec-mini-row {
+  display: flex;
+  font-size: 8.5pt;
+  color: black;
+}
+
+.spec-label-mini {
+  width: 38mm;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.spec-value-mini {
+  flex-grow: 1;
+}
+
+/* Commercial Details */
+.notes-list {
+  margin-top: 3mm;
+}
+
+.note-item {
+  margin-bottom: 1.5mm;
+  font-size: 9pt;
+  text-align: justify;
+}
+
+.terms-payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8mm;
+  margin-top: 3mm;
+  border-top: 1px dashed #ddd;
+  padding-top: 3mm;
+}
+
+.terms-section h3,
+.payment-section h3,
+.warranty-section h3 {
+  font-size: 10pt;
+  text-decoration: underline;
+  margin-bottom: 2mm;
+}
+
+.payment-section ol,
+.exclusions-list {
+  padding-left: 4mm;
+  font-size: 9pt;
+}
+
+.payment-section li,
+.exclusions-list li {
+  font-size: 8.5pt;
+  margin-bottom: 1mm;
+}
+
+.final-notes-box {
+  margin-top: 5mm;
+  padding: 3mm;
+  border-left: 5px solid black;
+}
+
+.note-item-simple {
+  font-size: 8.5pt;
+  margin-bottom: 1.5mm;
+  text-align: justify;
+}
+
+.terms-section-simple,
+.payment-section-simple,
+.warranty-section-simple {
+  margin-top: 2mm;
+}
+
+.terms-section-simple h4,
+.payment-section-simple h4,
+.warranty-section-simple h4 {
+  font-size: 10pt;
+  text-decoration: underline;
+  margin-bottom: 1.5mm;
+  color: black;
+}
+
+.term-row {
+  display: flex;
+  font-size: 8.5pt;
+  margin-bottom: 0.5mm;
+}
+
+.term-label {
+  width: 35mm;
+  font-weight: bold;
+}
+
+.payment-ul {
+  padding-left: 4mm;
+  font-size: 8.5pt;
+}
+
+.payment-ul li {
+  margin-bottom: 1.5mm;
+  text-align: justify;
+}
+
+.technical-content.compact,
+.equipment-content.compact,
+.commercial-content.compact {
+  gap: 1.5mm;
+}
+
+.technical-content.compact .param-section,
+.equipment-content.compact .param-section {
+  margin-bottom: 0mm;
+}
+
+.technical-content.compact .section-title {
+  margin-bottom: 2mm;
+}
+
+.mini-text td,
+.mini-text th {
+  padding: 1mm 2mm !important;
+  font-size: 7.5pt !important;
+  line-height: 1.2;
+}
+
+.price-table td,
+.price-table th {
+  padding: 1.2mm 2.5mm;
+  font-size: 8pt;
+}
+
+.note-item-simple {
+  font-size: 7.5pt;
+  margin-bottom: 0.8mm;
+  line-height: 1.2;
+}
+
+.terms-section-simple h4,
+.payment-section-simple h4,
+.warranty-section-simple h4 {
+  font-size: 8.5pt;
+  margin-bottom: 0.8mm;
+}
+
+.term-row {
+  display: flex;
+  font-size: 7.5pt;
+  margin-bottom: 0.3mm;
+}
+
+.term-label {
+  width: 28mm;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.term-value {
+  flex-grow: 1;
+}
+
+.payment-ul {
+  font-size: 7.5pt;
+  padding-left: 3.5mm;
+}
+
+.payment-ul li {
+  margin-bottom: 0.4mm;
+  line-height: 1.2;
+}
+
+.warranty-section-simple p {
+  font-size: 7.5pt;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.exclusions-list li {
+  font-size: 8.5pt;
+  margin-bottom: 1mm;
+}
+
+.total-row td {
+  background-color: transparent;
+}
+
+.small-title {
+  font-size: 10pt !important;
+  text-align: left !important;
+  margin-bottom: 3mm !important;
+}
+
+/* Compact Equipment Item Table Design for better fit */
+.equipment-item-block {
+  margin-bottom: 3mm;
+  page-break-inside: avoid;
+}
+
+.equipment-item-title {
+  font-size: 8pt;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5mm;
+}
+
+.equipment-item-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 7.2pt;
+  table-layout: fixed;
+}
+
+.equipment-item-table th {
+  background: rgba(248, 250, 252, 0.7);
+  color: black;
+  font-weight: 800;
+  text-align: left;
+  padding: 1mm 1.5mm;
+  border: 1px solid #cbd5e1;
+}
+
+.equipment-item-table td {
+  padding: 1mm 1.5mm;
+  border: 1px solid #cbd5e1;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.equipment-item-table td:first-child {
+  width: 40%;
+  font-weight: 600;
+  background: rgba(248, 250, 252, 0.8);
+}
+
+.equipment-item-table td:last-child {
+  width: 60%;
+}
+
+/* ── Rich Text Fixes ──────────────────────────────────────────────── */
+.preview-container strong,
+.preview-container b {
+  font-weight: bold !important;
+}
+
+.preview-container u {
+  text-decoration: underline !important;
+}
+
+.preview-container p {
+  margin-bottom: 0.8em;
+}
+
+.preview-container p:last-child {
+  margin-bottom: 0;
+}
