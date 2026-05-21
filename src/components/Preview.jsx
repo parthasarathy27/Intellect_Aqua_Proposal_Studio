@@ -163,10 +163,10 @@ const Preview = ({ data }) => {
             <div className="subject"><strong>Sub:</strong> <span dangerouslySetInnerHTML={{ __html: data.page2.subject }} style={{ display: 'inline' }} /></div>
             <div className="body-text" dangerouslySetInnerHTML={{ __html: data.page2.body }} />
 
-            <div className="closing-area" style={{ marginTop: '5mm', pageBreakInside: 'avoid' }}>
-              <div style={{ marginBottom: '4mm', fontWeight: 'bold' }}>Thanking you,</div>
-              <div style={{ marginBottom: '2mm', fontWeight: 'bold' }}>Yours Truly,</div>
-              <div className="company-signature" style={{ marginBottom: '10mm', fontWeight: 'bold' }}>For Intellect Aqua Private Limited</div>
+            <div className="closing-area" style={{ marginTop: '2mm', pageBreakInside: 'avoid' }}>
+              <div style={{ marginBottom: '2mm', fontWeight: 'bold' }}>Thanking you,</div>
+              <div style={{ marginBottom: '1mm', fontWeight: 'bold' }}>Yours Truly,</div>
+              <div className="company-signature" style={{ marginBottom: '4mm', fontWeight: 'bold' }}>For Intellect Aqua Private Limited</div>
               
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div className="signatory-side" style={{ textAlign: 'left' }}>
